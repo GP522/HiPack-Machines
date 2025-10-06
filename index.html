@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>HiPack-and-Fill-Machines</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <link rel="icon" href="images/favicon.svg" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
+  <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./assets/js/owlcarousel/owl.carousel.css">
+  <link rel="stylesheet" href="./assets/css/fontawesome-all.min.css" type="text/css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/custom.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/responsive.css">
+
+</head>
+
+<body>
+
+
+  <header id="header" class="home-header">
+    <div class="container-fuild">
+      <div class="header-menu">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <a class="navbar-brand" href="index.html">
+            <img src="./assets/images/HiPack-logo.svg" alt="">
+          </a>
+
+          <div class="nav-container collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav navmenu mx-auto">
+              <li class="nav-item"><a href="#" class="active">Home</a></li>
+              <li class="nav-item"><a href="#">About Us</a></li>
+              <li class="nav-item"><a href="#">SNUS</a></li>
+              <li class="nav-item"><a href="#">Our Machines</a></li>
+              <li class="nav-item"><a href="#">Blog</a></li>
+            </ul>
+            <div class="contact-button desktop">
+              <a href="" class="btn">Contact Us <img src="./assets/images/right-arrow.svg" alt=""></a>
+            </div>
+          </div>
+
+
+
+          <div class="naviconmobile">
+            <div class="contact-button mobile">
+              <a href="" class="btn">Contact Us <img src="./assets/images/right-arrow.svg" alt=""></a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+              <div class="menu-icon">
+                <span class="navicon"></span>
+              </div>
+            </button>
+          </div>
+        </nav>
+
+      </div>
+    </div>
+  </header><!----home-header-->
+
+
+  <div class="home-section">
+    <div class="swiper home-slider">
+      <div class="swiper-wrapper">
+        <!-- Slide 1 -->
+        <div class="swiper-slide homeslider" style="background-image: url('./assets/images/home-banner.jpg');">
+          <div class="container">
+            <div class="home-tittle">
+              <h1>Redefining Snus <br> Production</h1>
+              <p>Precision-engineered machines delivering speed, <br> consistency, and reliability at every stage.</p>
+              <a href="#" class="btn">Know More <img src="./assets/images/right-arrow.svg" alt=""></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 1 -->
+        <div class="swiper-slide homeslider" style="background-image: url('./assets/images/home-banner.jpg');">
+          <div class="container">
+            <div class="home-tittle">
+              <h1>Redefining Snus <br> Production</h1>
+              <p>Precision-engineered machines delivering speed, <br> consistency, and reliability at every stage.</p>
+              <a href="#" class="btn">Know More <img src="./assets/images/right-arrow.svg" alt=""></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 1 -->
+        <div class="swiper-slide homeslider" style="background-image: url('./assets/images/home-banner.jpg');">
+          <div class="container">
+            <div class="home-tittle">
+              <h1>Redefining Snus <br> Production</h1>
+              <p>Precision-engineered machines delivering speed, <br> consistency, and reliability at every stage.</p>
+              <a href="#" class="btn">Know More <img src="./assets/images/right-arrow.svg" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide Info (unique per slider) -->
+    <div class="slide-info">
+      <div class="slide-counter">
+        <span class="current">01</span>
+        <span class="total">03</span>
+      </div>
+      <div class="progress-line">
+        <span class="current"></span>
+        <span></span>
+      </div>
+    </div>
+
+  </div><!---home-section-->
+
+
+  <script src="./assets/js/jquery-3.6.3.js"></script>
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/swiper-bundle.min.js"></script>
+  <script src="./assets/js/owlcarousel/owl.carousel.js"></script>
+  <script src="./assets/js/custom.js"></script>
+
+  <script>
+    document.querySelectorAll('.home-slider').forEach((slider) => {
+      const section = slider.closest('.home-section');
+      const counter = section.querySelector('.slide-counter');
+      const progressSpans = section.querySelectorAll('.progress-line span');
+
+      const swiper = new Swiper(slider, {
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 0,
+        speed: 1000,
+        grabCursor: true,
+        keyboard: { enabled: true },
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+
+        on: {
+          init: function () {
+            updateCounterAndProgress(this, counter, progressSpans);
+          },
+          slideChange: function () {
+            updateCounterAndProgress(this, counter, progressSpans);
+          }
+        }
+      });
+    });
+
+    function updateCounterAndProgress(swiper, counterEl, progressSpans) {
+      if (!counterEl || !progressSpans) return;
+
+      const totalEl = counterEl.querySelector('.total');
+      const currentEl = counterEl.querySelector('.current');
+      const total = swiper.slides.length - swiper.loopedSlides * 2;
+      const current = swiper.realIndex + 1;
+
+      // ✅ Update counter text
+      currentEl.textContent = current.toString().padStart(2, '0');
+      totalEl.textContent = total.toString().padStart(2, '0');
+
+      // ✅ Highlight correct progress span
+      progressSpans.forEach((span, idx) => {
+        if (idx === (current - 1) % progressSpans.length) {
+          span.classList.add('current');
+        } else {
+          span.classList.remove('current');
+        }
+      });
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+@font-face {font-family:FontAwesome;src:url(../fonts/FontAwesome.otf);}
+@font-face {font-family:Nohemi-Regular;src:url(../fonts/Nohemi-Regular.otf);}
+@font-face {font-family:Nohemi-Medium;src:url(../fonts/Nohemi-Medium.otf);}
+@font-face {font-family:Nohemi-Bold;src:url(../fonts/Nohemi-Bold.otf);}
+@font-face {font-family:Nohemi-SemiBold;src:url(../fonts/Nohemi-SemiBold.otf);}
+@font-face {font-family:Nohemi-Light;src:url(../fonts/Nohemi-Light.otf);}
+@font-face {font-family:Nohemi-ExtraLight;src:url(../fonts/Nohemi-ExtraLight.otf);}
+
+
+body{font-family: "Nohemi-Regular"; color:#353332;font-size: 14px;}
+
+
+h1, h2, h3, h4, h5, h6, p, ul, ol, li {position: relative;}
+img {max-width: 100%;}
+ul{list-style: none; padding: 0px; margin: 0px;}
+a{text-decoration: none;}
+
+.navbar-nav{align-items: center;}
+/*=== Header ===*/
+.home-header { position: absolute;top: 10px;left: 0px;z-index: 2;width: 100%; }
+.header-menu{border-radius: 43px;background: #FBFBFB;filter: drop-shadow(10px 8px 6.3px rgba(0, 0, 0, 0.07));padding:6px 40px; margin: 0px 50px;}
+
+.navbar-brand img{height: 50px;}
+
+.navbar-dark{padding: 0px;}
+.navbar-expand-lg .navbar-collapse { justify-content: end; }
+.navbar-toggler {padding: 0; border: none;  border-radius: 30px;width: 36px; height: 36px; position: relative;}
+.menu-icon {display: flex; flex-direction: column; justify-content: space-between;cursor: pointer; transition: 0.3s ease-in-out;}
+.navicon,
+.navicon:before,
+.navicon:after {background: #fff; height: 2px; width: 30px;position: absolute; left: 0; transition: 0.3s;}
+.navicon { position: relative; margin: auto; }
+.navicon:before { content: ''; top: -8px; }
+.navicon:after { content: ''; top: 8px; }
+.navbar-toggler[aria-expanded="true"] .navicon { background: transparent; }
+.navbar-toggler[aria-expanded="true"] .navicon:before { transform: rotate(45deg); top: 0; }
+.navbar-toggler[aria-expanded="true"] .navicon:after { transform: rotate(-45deg); top: 0; }
+.navbar-toggler:focus { box-shadow: none; }
+
+.navmenu li { position: relative; }
+.navmenu > ul > li:last-child { padding-right: 0; }
+.navmenu .nav-item a{font-family:'Nohemi-ExtraLight'; color: #000;font-size: 18px;font-weight: 300;line-height: normal; display: inline-block; padding: 0px 20px; }
+.navmenu .nav-item a.active{background: var(--Gradient, linear-gradient(180deg, #0525A0 0%, #0E07FB 100%));background-clip: text;-webkit-background-clip: text;-webkit-text-fill-color: transparent;}
+
+.contact-button .btn{font-family:'Nohemi-SemiBold'; display: inline-flex; align-items: center; gap: 0px 8px; border-radius: 49px;background: var(--Gradient_1, linear-gradient(180deg, #0525A0 0%, #000 100%)); color: #FFF;font-size: 14px;font-weight: 600;line-height: normal; padding:14px 30px;}
+.contact-button .btn img{height:18px;}
+
+
+/*=== Header ===*/
+
+
+/*=====home-section=====*/
+.home-section{ position: relative; overflow: hidden;}
+.homeslider{background-position: center !important; background-size: cover !important; padding: 160px 0px 240px 0px;}
+.home-tittle h1{font-family:'Nohemi-ExtraLight';color: #FFF;font-size: 55px;font-weight: 300;line-height: 70px;}
+.home-tittle p{font-family:'Nohemi-ExtraLight'; color:#FFF;font-size: 20px;font-weight: 300;line-height: 35px; margin-bottom: 30px;}
+.home-tittle .btn{transition: all 0.3s ease;border-radius: 100px;background: rgba(148, 148, 148, 0.45); display: inline-flex;height: 55px;padding: 8px 19px 7px 25px;justify-content: flex-end;align-items: center;gap: 0px 10px; color: #FFF;font-size: 16px;font-weight: 400;line-height: 31.2px;}
+.home-tittle .btn:hover {background:#0525a0;}
+.home-title {position: relative;z-index: 999;max-width: 550px;}
+
+
+/* --- Custom Counter --- */
+.slide-counter {font-family: 'Nohemi-ExtraLight';display: flex;align-items: center;gap: 10px;color: #fff;font-size: 14px;font-weight: 300;}
+.slide-counter .current {font-size:16px;}
+.slide-info {position: absolute;left: 17%;z-index: 10;display: flex;align-items: center;gap: 20px;top: 78%;}
+.progress-line {display: flex;align-items: center;gap: 0px 10px;}
+.progress-line span.current{background:  #0AD64F; width: 200px;transition: width 0.5s ease;}
+.progress-line span{border-radius: 10px; width: 80px; height: 2px; background: linear-gradient(90deg,rgba(255, 255, 255, 1) 0%,rgba(142, 142, 142, 0) 100%);display: block;}
+
+
+
+/*=====home-section=====*/
+
