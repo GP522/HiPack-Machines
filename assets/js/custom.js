@@ -2,39 +2,6 @@
 
 
 
- document.addEventListener('DOMContentLoaded', () => {
-    const dropdowns = document.querySelectorAll('.nav-item');
-
-    dropdowns.forEach((item) => {
-      const toggle = item.querySelector('.toggle-dropdown');
-      const submenu = item.querySelector('.dropdown');
-
-      if (toggle && submenu) {
-        toggle.addEventListener('click', (e) => {
-          if (window.innerWidth < 769) {
-            e.preventDefault();
-            item.classList.toggle('open');
-
-            // Toggle icon + / −
-            if (item.classList.contains('open')) {
-              toggle.classList.add('open');
-            } else {
-              toggle.classList.remove('open');
-            }
-
-            // Close other open dropdowns (optional)
-            dropdowns.forEach((other) => {
-              if (other !== item) {
-                other.classList.remove('open');
-                const otherIcon = other.querySelector('.toggle-dropdown');
-                if (otherIcon) otherIcon.classList.remove('open');
-              }
-            });
-          }
-        });
-      }
-    });
-  });
 
 
 
@@ -43,31 +10,30 @@
 
 
 
-
-$(window).on('scroll', function (event) {
-    var scrollValue = $(window).scrollTop();
-    if (scrollValue > 200) {
-      $('#header').addClass('fixed');
-    } else {
-      $('#header').removeClass('fixed');
-    }
-  });
-
+// $(window).on('scroll', function (event) {
+//     var scrollValue = $(window).scrollTop();
+//     if (scrollValue > 200) {
+//       $('#header').addClass('fixed');
+//     } else {
+//       $('#header').removeClass('fixed');
+//     }
+//   });
 
 
 
-AOS.init({
-    duration: 1000, // animation duration
-    once: true      // whether animation should happen only once
-  });
+
+// AOS.init({
+//     duration: 1000, // animation duration
+//     once: true      // whether animation should happen only once
+//   });
 
 
 
 
 
 //========home page=========
-var slider1 = $('.slider1');
-slider1.owlCarousel({
+var blogslider = $('.blogslider');
+blogslider.owlCarousel({
   loop: true,
   nav: true,
   dots: false,
@@ -76,11 +42,11 @@ slider1.owlCarousel({
   autoplayTimeout: 5000,
   margin: 20,
   responsive: {
-    320: { items: 1.2 },
-    480: { items: 1.3 },
+    320: { items: 1},
+    480: { items: 1},
     600: { items: 2 },
     960: { items: 3 },
-    1200: { items: 3.5 }
+    1200: { items: 4 }
 
   }
 });
