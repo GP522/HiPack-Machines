@@ -52,6 +52,47 @@ blogslider.owlCarousel({
 });
 
 
+//========about page=========
+var valuesilder = $('.valuesilder');
+valuesilder.owlCarousel({
+  loop: true,
+  nav: true,
+  dots: false,
+  smartSpeed: 450,
+  autoplay: true,
+  autoplayTimeout: 5000,
+  margin: 20,
+  responsive: {
+    320: { items: 1},
+    480: { items: 1},
+    600: { items: 2 },
+    960: { items: 3 },
+    1200: { items: 4.5 }
+
+  }
+});
+
+
+var technicalslider = $('.technicalslider');
+technicalslider.owlCarousel({
+  loop: true,
+  nav: false,
+  dots: true,
+  smartSpeed: 450,
+  autoplay: true,
+  autoplayTimeout: 5000,
+  margin: 20,
+  responsive: {
+    320: { items: 1},
+    480: { items: 1},
+    600: { items: 1},
+    960: { items: 1},
+    1200: { items: 1}
+
+  }
+});
+
+
 
 
 
