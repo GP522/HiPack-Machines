@@ -93,6 +93,50 @@ technicalslider.owlCarousel({
 });
 
 
+var technicalslider = $('.technicalslider');
+technicalslider.owlCarousel({
+  loop: true,
+  nav: false,
+  dots: true,
+  smartSpeed: 450,
+  autoplay: true,
+  autoplayTimeout: 5000,
+  margin: 20,
+  responsive: {
+    320: { items: 1},
+    480: { items: 1},
+    600: { items: 1},
+    960: { items: 1},
+    1200: { items: 1}
+
+  }
+});
+
+
+
+
+
+var SSMmachinesilder = $('.SSMmachinesilder');
+SSMmachinesilder.owlCarousel({
+  loop: true,
+  nav: false,
+  dots: true,
+  smartSpeed: 450,
+  autoplay: true,
+  autoplayTimeout: 5000,
+  margin: 20,
+  responsive: {
+    320: { items: 1},
+    480: { items: 1},
+    600: { items: 1},
+    960: { items: 1},
+    1200: { items: 1}
+
+  }
+});
+
+
+
 
 
 
