@@ -28,7 +28,7 @@ a{text-decoration: none;}
 .menu-icon {display: flex; flex-direction: column; justify-content: space-between;cursor: pointer; transition: 0.3s ease-in-out;}
 .navicon,
 .navicon:before,
-.navicon:after {background: #fff; height: 2px; width: 30px;position: absolute; left: 0; transition: 0.3s;}
+.navicon:after {background: #00da5b; height: 2px; width: 30px;position: absolute; left: 0; transition: 0.3s;}
 .navicon { position: relative; margin: auto; }
 .navicon:before { content: ''; top: -8px; }
 .navicon:after { content: ''; top: 8px; }
