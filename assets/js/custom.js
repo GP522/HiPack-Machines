@@ -42,8 +42,8 @@ blogslider.owlCarousel({
   autoplayTimeout: 5000,
   margin: 20,
   responsive: {
-    320: { items: 1},
-    480: { items: 1},
+    320: { items: 1 },
+    480: { items: 1 },
     600: { items: 2 },
     960: { items: 3 },
     1200: { items: 4 }
@@ -63,8 +63,8 @@ valuesilder.owlCarousel({
   autoplayTimeout: 5000,
   margin: 20,
   responsive: {
-    320: { items: 1},
-    480: { items: 1},
+    320: { items: 1 },
+    480: { items: 1 },
     600: { items: 2 },
     960: { items: 3 },
     1200: { items: 4.5 }
@@ -83,11 +83,11 @@ technicalslider.owlCarousel({
   autoplayTimeout: 5000,
   margin: 20,
   responsive: {
-    320: { items: 1},
-    480: { items: 1},
-    600: { items: 1},
-    960: { items: 1},
-    1200: { items: 1}
+    320: { items: 1 },
+    480: { items: 1 },
+    600: { items: 1 },
+    960: { items: 1 },
+    1200: { items: 1 }
 
   }
 });
@@ -103,11 +103,11 @@ technicalslider.owlCarousel({
   autoplayTimeout: 5000,
   margin: 20,
   responsive: {
-    320: { items: 1},
-    480: { items: 1},
-    600: { items: 1},
-    960: { items: 1},
-    1200: { items: 1}
+    320: { items: 1 },
+    480: { items: 1 },
+    600: { items: 1 },
+    960: { items: 1 },
+    1200: { items: 1 }
 
   }
 });
@@ -126,11 +126,31 @@ SSMmachinesilder.owlCarousel({
   autoplayTimeout: 5000,
   margin: 20,
   responsive: {
-    320: { items: 1},
-    480: { items: 1},
-    600: { items: 1},
-    960: { items: 1},
-    1200: { items: 1}
+    320: { items: 1 },
+    480: { items: 1 },
+    600: { items: 1 },
+    960: { items: 1 },
+    1200: { items: 1 }
+
+  }
+});
+
+
+var precisionslider = $('.precisionslider');
+precisionslider.owlCarousel({
+  loop: true,
+  nav: true,
+  dots: false,
+  smartSpeed: 450,
+  autoplay: true,
+  autoplayTimeout: 5000,
+  margin: 20,
+  responsive: {
+    320: { items: 1 },
+    480: { items: 1 },
+    600: { items: 2 },
+    960: { items: 2 },
+    1200: { items: 3.5 }
 
   }
 });
