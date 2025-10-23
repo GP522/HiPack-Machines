@@ -63,10 +63,10 @@ valuesilder.owlCarousel({
   autoplayTimeout: 5000,
   margin: 20,
   responsive: {
-    320: { items: 1 },
-    480: { items: 1 },
-    600: { items: 2 },
-    960: { items: 3 },
+    320: { items: 1.2 },
+    480: { items: 1.2 },
+    600: { items: 2.1 },
+    960: { items: 3.2 },
     1200: { items: 4.5 }
 
   }
@@ -146,10 +146,10 @@ precisionslider.owlCarousel({
   autoplayTimeout: 5000,
   margin: 20,
   responsive: {
-    320: { items: 1 },
-    480: { items: 1 },
-    600: { items: 2 },
-    960: { items: 2 },
+    320: { items: 1.2},
+    480: { items: 1.2},
+    600: { items: 2.2},
+    960: { items: 2.2 },
     1200: { items: 3.5 }
 
   }
