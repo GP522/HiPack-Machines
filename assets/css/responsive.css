@@ -46,9 +46,8 @@
 .longevitysection .owl-prev:before {top: -24%;right: 20%;}
 .longevitysection .owl-next:before{top: -24%;right:10%;}
 
-
-
-
+.Trackflowing .modal-body {padding:60px 40px;}
+.flowingcnt{padding-left: 0px;}
 
 
 
@@ -195,6 +194,11 @@
 .longevitysection .owl-prev:before{top: -18%;}
 .longevitysection .owl-next:before{top: -18%;}
 .workflow-steps:before{display: none;}
+
+.flowingcnt h3{font-size: 28px;}
+button.btnclose{top: 0px;}
+
+
 }
 
 
@@ -266,6 +270,17 @@
 
 .longevitysection .bloghd h3{max-width: 240px;}
 .Modular-img{height:auto; padding: 60px 20px;}
+
+.Trackflowing .modal-body {padding: 10px 20px 40px 20px;}
+button.btnclose{position: relative; top: 0px; right: 0px;}
+.flowingcnt{margin-top: 20px;}
+.flowingcnt h3 {font-size: 26px;line-height: 30px;}
+.single-track{padding: 0px 20px;}
+.flowingcnt ul{margin-bottom: 30px;}
+.flowingcnt li{line-height: 30px;}
+.single-card h4 {font-size: 22px;line-height: 26px;}
+.Brochure-btn{display: block; border-radius: 9px;}
+.Brochure-btn .btn{width: 100%;}
 }
 
 

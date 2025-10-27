@@ -467,5 +467,25 @@ button.btnclose {background: transparent;border: 0px; position: absolute; top: 4
 .flowingcnt h5{color: #000;font-weight: 500;font-size: 20px;line-height: 30px;letter-spacing: 0%;vertical-align: middle; margin-bottom: 20px;}
 
 
-.table-scroll th{font-weight: 500;font-size: 16px;line-height: 22px;color: #000; padding: 10px;}
-.table-scroll td{font-weight: 300;font-size: 14px;line-height: 20px; color: #000; padding: 14px;}
+.table-scroll th{font-weight: 500;font-size: 16px;line-height: 22px;color: #000; padding: 10px 16px;}
+.table-scroll td{font-weight: 300;font-size: 14px;line-height: 20px; color: #000; padding: 14px 16px;}
+
+.table-scroll {width: 100%;overflow-x: auto;-webkit-overflow-scrolling: touch;}
+.table-scroll table {width: 100%;border-collapse: collapse;min-width: 600px;}
+.table-scroll th,
+.table-scroll td {white-space: nowrap;text-align: left;border: 1px solid #dee2e6;}
+.table-scroll thead {background-color: #f8f9fa;font-weight: 600;}
+
+.Brochure-btn {display: inline-flex;background: #000;border-radius: 50px;overflow: hidden; padding: 6px 8px; margin-top: 30px;}
+
+.Brochure-btn .btn {display: inline-block;padding: 12px 25px;font-weight: 500;border: none;
+  transition: all 0.3s ease;text-align: center; border-radius: 30px;
+font-size: 16px; font-family:'Nohemi-Medium';}
+
+
+.Brochure-btn .download {color: #fff;background: #000;}
+.Brochure-btn .request {background: #fff;color: #000;}
+
+/* Hover effects */
+.Brochure-btn .download:hover {background: #333;}
+.Brochure-btn .request:hover {background: #000;color: #fff;}
