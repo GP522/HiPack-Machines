@@ -5,15 +5,19 @@
 
 
 @media (max-width:1460.8px) {
-
-
+	.slide-info{left:6%;}
+.Modular-img{height: 370px;}
 
 }
 @media (max-width:1390.8px) {
-
+.slide-info{left:10%;}
 }
 @media (max-width:1366.8px) {
 .stepcnt h3{font-size: 14px; line-height: 18px;}
+	.machine-section{height:690px;}
+  .Modular-img img {
+    max-width: 120px;
+}
 
 }
 @media (max-width:1280.8px) {

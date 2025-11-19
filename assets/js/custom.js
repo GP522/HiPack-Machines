@@ -66,31 +66,33 @@ valuesilder.owlCarousel({
     320: { items: 1.2 },
     480: { items: 1.2 },
     600: { items: 2.1 },
-    960: { items: 3.2 },
+    960: { items: 2.2 },
+    1024: { items: 2.5 },
     1200: { items: 4.5 }
+    
 
   }
 });
 
 
-var technicalslider = $('.technicalslider');
-technicalslider.owlCarousel({
-  loop: true,
-  nav: false,
-  dots: true,
-  smartSpeed: 450,
-  autoplay: true,
-  autoplayTimeout: 5000,
-  margin: 20,
-  responsive: {
-    320: { items: 1 },
-    480: { items: 1 },
-    600: { items: 1 },
-    960: { items: 1 },
-    1200: { items: 1 }
+// var technicalslider = $('.technicalslider');
+// technicalslider.owlCarousel({
+//   loop: true,
+//   nav: false,
+//   dots: true,
+//   smartSpeed: 450,
+//   autoplay: true,
+//   autoplayTimeout: 5000,
+//   margin: 20,
+//   responsive: {
+//     320: { items: 1 },
+//     480: { items: 1 },
+//     600: { items: 1 },
+//     960: { items: 1 },
+//     1200: { items: 1 }
 
-  }
-});
+//   }
+// });
 
 
 var technicalslider = $('.technicalslider');
