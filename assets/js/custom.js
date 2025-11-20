@@ -3,7 +3,39 @@
 
 
 
+ document.addEventListener('DOMContentLoaded', () => {
+    const dropdowns = document.querySelectorAll('.nav-item');
 
+    dropdowns.forEach((item) => {
+      const toggle = item.querySelector('.toggle-dropdown');
+      const submenu = item.querySelector('.dropdown');
+
+      if (toggle && submenu) {
+        toggle.addEventListener('click', (e) => {
+          if (window.innerWidth < 769) {
+            e.preventDefault();
+            item.classList.toggle('open');
+
+            // Toggle icon + / âˆ’
+            if (item.classList.contains('open')) {
+              toggle.classList.add('open');
+            } else {
+              toggle.classList.remove('open');
+            }
+
+            // Close other open dropdowns (optional)
+            dropdowns.forEach((other) => {
+              if (other !== item) {
+                other.classList.remove('open');
+                const otherIcon = other.querySelector('.toggle-dropdown');
+                if (otherIcon) otherIcon.classList.remove('open');
+              }
+            });
+          }
+        });
+      }
+    });
+  });
 
 
 

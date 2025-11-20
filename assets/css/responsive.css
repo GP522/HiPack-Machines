@@ -9,7 +9,7 @@
 .Modular-img{height: 370px;}
 .values-section .owl-prev:before{right: 20%;}
 .latest-section .owl-prev:before{right: 8%;}
-
+	.longevitysection .owl-prev:before{right:20%;}
 }
 
 
@@ -77,6 +77,9 @@
 
 
 @media (max-width:991.8px) {
+  li.nav-item.open {margin-bottom: 0px;}
+  .navmenu .dropdown li{margin-bottom:15px;}
+  .navmenu .dropdown li a{font-size: 20px;}
 .header-menu{margin: 0px 20px; padding: 6px 0px;}
 .navbar-toggler{top: 0px; right: 15px;}
 .header-menu a.navbar-brand img{padding-left:15px;}
@@ -92,7 +95,7 @@
 .expertise-text h3 {font-size: 20px;line-height: 22px;margin-bottom: 12px;}
 .expertise-text h5{font-size:15px;line-height: 22px;margin-bottom: 12px;}
 .expertise-text p{font-size: 14px; margin-bottom: 30px; line-height: 20px;}
-.testament p{font-size: 14px; line-height: 20px;}
+.testament p{font-size: 14px; line-height: 20px; margin-bottom:20px;}
 .all-btn .btn{font-size: 14px;}
 .gridwrapper { grid-template-columns: repeat(2, 1fr);}
 .presence-section{padding: 60px 0px;}
@@ -100,7 +103,7 @@
 .machine-section{padding: 60px 0px;}
 .innovation-section{padding: 60px 0px;}
 .latest-section{padding: 60px 0px;}
-.upgrade-section{padding: 60px 0px;}
+.upgrade-section{padding: 130px 0px;}
 .footer {padding:40px 0px 20px 0px;}
 .about-banner{padding: 160px 0px;}
 
@@ -112,20 +115,20 @@
 .ftr-menu{margin-bottom: 20px;}
 .ftr-werp {grid-template-columns: repeat(2, 1fr);}
 .copyright{margin-top: 20px;}
-.wrappercover{padding: 30px 20px;height: 100%;}
-.servicehd h4{font-size: 26px; line-height: 30px;}
+.wrappercover{padding: 40px 20px;height: 100%;}
+.servicehd h4{font-size: 24px; line-height: 30px;}
 .clientswerap{left: 0px;}
 .celiablecnt P{font-size: 14px; line-height: 20px;}
 .clientswerap{gap: 0px 10px;}
-.certified{padding: 30px 15px;height: 100%;}
+.certified{padding: 40px 15px;height: 100%;}
 .certified h4{font-size: 20px; line-height: 26px;}
-.ourcard {padding: 30px 0px 0px 20px;height: 100%;}
+.ourcard {padding: 40px 0px 0px 20px;height: 100%;}
 .ourcard h5{font-size: 24px; line-height: 26px;}
 .ourcard p{font-size: 16px; line-height: 22px;}
-.partnerwerap{padding: 30px 20px; height: 100%;}
+.partnerwerap{padding: 40px 20px; height: 100%;}
 .latest-section .owl-prev:before {top: -20%;    right:12%;width: 50px;height: 50px;background-size: 50px;}
 .latest-section .owl-next:before {top: -20%;width: 50px;height: 50px;background-size: 50px;}
-
+	.ourcard p{max-width:110px;}
 
 .celiablecnt{text-align: center;}
 
@@ -175,7 +178,7 @@
 .git-item p{font-size:26px; line-height:35px;}
 .support-bg{padding: 60px 20px;}
 .product-hd h3{font-size: 35px; line-height: 40px;}
-.product-banner {padding: 140px 0px 60px 0px;}
+.product-banner {padding: 90px 0px 60px 0px;}
 .blog-werrap {grid-template-columns: repeat(2, 1fr);}
 .product-hd{margin-bottom: 30px;}
 .detail-werap h3{font-size: 38px; line-height: 44px;}
@@ -228,26 +231,29 @@ button.btnclose{top: 0px;}
 
 @media (max-width:767.8px) {
 .slide-info {left: 0;right: 0px;top: 80%;justify-content: center;}
-.expertise-wrapper{padding-left: 0px; padding-top: 30px;}
+.expertise-wrapper{padding-left: 0px; margin-top: 30px;}
 .bringing-text h4 {font-size: 24px;line-height: 32px;}
 .machine-section {padding: 60px 0px 0px 0px; height: 100%; background-image: url(../images/machine-banner.jpg);}
 .machine-img img{display: block;}
 
 .bottom-text{padding: 0px 20px;}
 .cardwerap{margin-top: 30px;}
-
+	.bringing-text{margin-bottom:30px;}
 .servicehd h4 span{display: block;}
 .certified{margin-left: 0px; margin-top: 15px;height: auto;}
 .ourcard{margin-right: 0px; height: auto;}
 .heading-hd h2 {font-size: 28px;line-height: normal;}
-
+.contact-page {
+        padding: 90px 0px 20px 0px;
+    }
 .bloghd h3 {font-size: 24px;line-height: 30px;margin-bottom: 20px;}
-.social-icon{margin-bottom: 20px;}
+.social-icon{margin-bottom: 40px;}
 .latest-list .col-3 {width: 100%;}
 .latest-list .col-5 {width: 100%;}
 .latest-list .col-2{width: 100%;}
 .latest-list .col-4{width: 100%;}
 .latest-list p span{text-align: left;}
+	.ftr-menu li a{margin-bottom:20px;}
 
 .location-section h2{font-size: 30px; line-height: normal; margin-bottom: 20px;}
 .single-werrap{grid-template-columns: repeat(2, 1fr); gap: 20px 20px;}
@@ -259,9 +265,15 @@ button.btnclose{top: 0px;}
 .industry-section .bloghd h3{margin: 0 auto 30px;} 
 .blogcnt h5{font-size: 14px;}
 
-.specifications{padding-bottom: 60px;}
+.specifications{padding-bottom: 60px; padding-top:20px;}
 
-
+.contact-infom {
+    margin-top: 30px;
+}
+	
+	.products-section .arrow-btn{position:relative; bottom:auto;}	
+	
+	
 }
 
 
@@ -272,20 +284,27 @@ button.btnclose{top: 0px;}
 .progress-line span.current{width: 120px;}
 .container {padding: 0px 20px;}
 .presence-section {padding: 40px 10px;}
-
+.single-werrap {
+	grid-template-columns: repeat(1, 1fr);}
 .copyright .row{flex-wrap: wrap-reverse;}
 .privacy-dlf{justify-content: space-between; margin-bottom: 5px;}
-.bloghd h3{font-size: 18px;}
+.bloghd h3{font-size:24px;}
 
-.latest-section .owl-prev:before {top: -17%;right: 16%;width:50px;height:50px;background-size: 50px;}
-.latest-section .owl-next:before{top: -17%;width:50px;height:50px;background-size: 50px;}
+.latest-section .owl-prev:before {top: auto;right: auto;width: 50px;height: 50px;background-size: 50px;left:30%; bottom:-8%;}
+.latest-section .owl-next:before{top:auto;width:50px;height:50px;background-size: 50px; right:30%; bottom:-8%;}
 
-.values-section .owl-prev:before {top: -18%;right: 18%;width:50px;height:50px;background-size: 50px;}
-.values-section .owl-next:before{top: -18%;width:50px;height:50px;background-size: 50px; right: 10px;}
+.values-section .owl-prev:before {top: auto;right: auto;width: 50px;height: 50px;background-size: 50px;left:30%; bottom:-14%;}
+.values-section .owl-next:before{top:auto;width:50px;height:50px;background-size: 50px; right:30%; bottom:-14%;}
 
-.longevitysection  .owl-prev:before {top: -24%;right: 18%;width:50px;height:50px;background-size: 50px;}
-.longevitysection .owl-next:before{top: -24%;width:50px;height:50px;background-size: 50px; right: 10px;}
-        
+
+.longevitysection .owl-next:before{top:auto;width:50px;height:50px;background-size: 50px; right:30%;}
+.longevitysection .owl-prev:before {top: auto;right: auto;width: 50px;height: 50px;background-size: 50px;left:30%;}	
+	
+	.values-section {
+        padding: 60px 0px 90px 20px;
+    }
+	
+	
 .gridwrapper {grid-template-columns: repeat(1, 1fr);}
 .leaderswerap{grid-template-columns: repeat(2, 1fr); gap: 20px 20px;}
 .product-werrap{grid-template-columns: repeat(1, 1fr);}
@@ -293,7 +312,7 @@ button.btnclose{top: 0px;}
 
 .snus-hd p{font-size: 16px; line-height: 22px;}
 
-.longevitysection .bloghd h3{max-width: 240px;}
+.longevitysection .bloghd h3{}
 .Modular-img{padding: 60px 20px;}
 
 
@@ -316,6 +335,11 @@ button.btnclose{top: 0px;}
 .Modular-img img {max-width: 100%;max-height: 120px;}
 
 .productlist .value{width:50%; padding-left: 0px;}
+	.servicehd p{font-size:14px; line-height:22px;}
+	.certified ul{ gap: 35px 10px;}
+	.ftr-werp {
+        grid-template-columns: repeat(1, 1fr);
+    }
 
 }
 
@@ -323,7 +347,7 @@ button.btnclose{top: 0px;}
   
 @media (max-width:480.8px) {
  .certified h4 {font-size: 24px;line-height: 32px;}
-.clientswerap{grid-template-columns: repeat(2, 1fr); gap: 10px 10px;}
+.clientswerap{grid-template-columns: repeat(2, 1fr); gap: 35px 10px;}
 .expertise-text{padding-top: 10px;}
 .home-tittle h1 {font-size: 40px;line-height: 45px;}
 
@@ -386,7 +410,7 @@ button.btnclose{top: 0px;}
 .servicehd h4 {font-size: 22px;line-height: 28px;}
 .servicehd p{font-size: 14px; line-height: 20px;}
 .partnerwerap h4{font-size: 24px; line-height: 28px;}
-.bloghd h3 {font-size: 20px;line-height: 26px;max-width: 200px;}
+
 .latest-section .owl-prev:before {top: -24%;right: 20%;}
 .latest-section .owl-next:before{top: -24%;}
 .titlewrap p {font-size: 16px;}
@@ -407,8 +431,6 @@ button.btnclose{top: 0px;}
 
 @media (max-width:340.8px) {
  .specifications li {font-size: 12px;}
-.longevitysection .owl-prev:before {top: -16%;right: 20%;width: 40px;height: 40px;background-size: 40px;}
-.longevitysection .owl-next:before {top: -16%;width: 40px;height: 40px;background-size: 40px;}
 .longevitysection .bloghd h3 {max-width: 220px;}
 .about-banner h2{font-size: 26px; line-height: 30px;}
 .our-expertise h3{font-size: 22px; line-height:26px;}
