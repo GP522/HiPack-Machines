@@ -130,8 +130,8 @@ background-clip: text;-webkit-background-clip: text;-webkit-text-fill-color: tra
 .certified li{margin-top: 50px;}
 
 .ourcard{margin-right: 15px; margin-top: 15px;border-radius: 4px;background: var(--Neon-Green, #0AD64F); padding: 50px 0px 0px 40px;  height: 532px; position: relative; overflow: hidden;}
-.ourcard h5{color:#fff;font-size: 34px;font-weight: 500;line-height: 24px; margin-bottom: 15px;}
-.ourcard p{font-family:'Nohemi-Light';color:#fff;font-size: 28px;font-weight: 300;line-height: 38px; max-width: 170px;}
+.ourcard h5{color:#fff;font-size: 30px;font-weight: 500;line-height:34px; margin-bottom: 10px;}
+.ourcard p{font-family:'Nohemi-Light';color:#fff;font-size: 24px;font-weight: 300;line-height:30px; max-width: 170px;}
 .vectorbottom{text-align: right; display: block;}
 .vectorbottom img{width: 100%; height: 100%;}
 
@@ -449,11 +449,19 @@ background-clip: text;-webkit-background-clip: text;-webkit-text-fill-color: tra
 
    .specifications{position: relative; overflow: hidden; padding-bottom: 90px; overflow: hidden;}
    .specifications h3{font-weight: 400;font-size: 40px;line-height: 38px;text-align: center;color: #00003D; margin-bottom: 50px; }
-ul.productlist {max-width: 780px;margin-left: auto;}
+/* ul.productlist {max-width: 780px;margin-left: auto;}
     .specifications li{font-weight: 300;font-size:18px;line-height: 50px;vertical-align: middle; border-bottom: 1px solid #00003D33; color: #9d9da0;
     display: flex; align-items: center; justify-content: space-between;    padding-right: 80px;}
     .specifications li span{font-weight:500; color: #000000;}
-        .specifications li:last-of-type{border: 0px;}
+        .specifications li:last-of-type{border: 0px;} */
+
+
+.productlist {max-width: 780px;margin-left: auto;}
+.productlist li {display: flex;justify-content: space-between;align-items: center;border-bottom: 1px solid #00003D33;line-height: 50px;font-size: 18px;font-weight: 300;color: #9d9da0;}
+.productlist li:last-child {border-bottom: 0;}
+.productlist .label {font-weight: 400;color: #000000;}
+.productlist .value {text-align: left;padding-left: 40px;display: block;width: 36%;}
+
 
 
 /*====Trackflowing popup=====*/
