@@ -22,10 +22,6 @@
 
 
 
-// AOS.init({
-//     duration: 1000, // animation duration
-//     once: true      // whether animation should happen only once
-//   });
 
 
 
@@ -46,7 +42,9 @@ blogslider.owlCarousel({
     480: { items: 1 },
     600: { items: 2 },
     960: { items: 3 },
-    1200: { items: 4 }
+    1200: { items: 3 },
+    1460: { items: 3 },
+    1920: { items: 4 }
 
   }
 });
@@ -65,34 +63,17 @@ valuesilder.owlCarousel({
   responsive: {
     320: { items: 1.2 },
     480: { items: 1.2 },
-    600: { items: 2.1 },
+    600: { items: 2.2 },
     960: { items: 2.2 },
-    1024: { items: 2.5 },
-    1200: { items: 4.5 }
+    1024: { items: 2.3 },
+    1200: { items: 3.3 },
+    1460: { items: 3.3 },
+    1920: { items: 4.5 }
     
 
   }
 });
 
-
-// var technicalslider = $('.technicalslider');
-// technicalslider.owlCarousel({
-//   loop: true,
-//   nav: false,
-//   dots: true,
-//   smartSpeed: 450,
-//   autoplay: true,
-//   autoplayTimeout: 5000,
-//   margin: 20,
-//   responsive: {
-//     320: { items: 1 },
-//     480: { items: 1 },
-//     600: { items: 1 },
-//     960: { items: 1 },
-//     1200: { items: 1 }
-
-//   }
-// });
 
 
 var technicalslider = $('.technicalslider');
@@ -160,4 +141,8 @@ precisionslider.owlCarousel({
 
 
 
+AOS.init({
+    duration: 1000, // animation duration
+    once: true      // whether animation should happen only once
+  });
 

@@ -7,6 +7,8 @@
 @media (max-width:1460.8px) {
 	.slide-info{left:6%;}
 .Modular-img{height: 370px;}
+.values-section .owl-prev:before{right: 20%;}
+.latest-section .owl-prev:before{right: 8%;}
 
 }
 @media (max-width:1390.8px) {
